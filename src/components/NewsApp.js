@@ -7,13 +7,15 @@ const Newsapp = () => {
     const [newsData, setNewsData] = useState([])
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState("")
-    const API_KEY = "9c3ed8ee95884dec979460a60f96675b";
+    const API_KEY = "ae4d7fcdaefe66336b93e7a20c444737";
 
     const getData = useCallback(async(query) =>{
         try {
             setLoading(true)
             setError("")
-            const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`);
+           const response = await fetch(
+  `https://gnews.io/api/v4/search?q=${query}&lang=en&country=in&max=10&apikey=${API_KEY}`
+);
             const jsonData = await response.json();
 
             if (!response.ok) {

@@ -4,8 +4,7 @@ const Card = ({ data }) => {
     return (
         <div className='row g-4'>
             {data.map((curItem, index) => {
-                const imageSrc = curItem.urlToImage || 'https://via.placeholder.com/640x360?text=News+Image';
-
+               const imageSrc = curItem.image || 'https://via.placeholder.com/640x360?text=News+Image';
 
 
                 return (
