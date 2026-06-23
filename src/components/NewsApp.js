@@ -13,9 +13,7 @@ const Newsapp = () => {
         try {
             setLoading(true)
             setError("")
-           
-            const response = await fetch(`https://gnews.io/api/v4/search?q=${query}&lang=en&country=in&max=10&apikey=${API_KEY}`);
-             
+            const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`);
             const jsonData = await response.json();
 
             if (!response.ok) {
@@ -52,8 +50,8 @@ const Newsapp = () => {
     }
 
   return (
-        <section className="newsPageWrap">
-            <div className="container py-5">
+        <section className="newsPageWrap left">
+            <div className="container py-5 right ">
                 <div className="row justify-content-center mb-4">
                     <div className="col-lg-10">
                         <div className="newsHero">
