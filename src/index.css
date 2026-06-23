@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #081120;
-  color: #f8fafc;
+  color: #56a7f8;
 }
 
 code {
@@ -25,11 +25,11 @@ code {
 
 .brandText,
 .siteNavbar .nav-link {
-  color: #f8fafc !important;
+  color: #3593f0 !important;
 }
 
 .siteNavbar .nav-link.active {
-  color: #8be9fd !important;
+  color: #05272f !important;
 }
 
 .navCta,
@@ -54,7 +54,7 @@ code {
   padding: 0.4rem 0.85rem;
   border-radius: 999px;
   background: rgba(139, 233, 253, 0.12);
-  color: #8be9fd;
+  color: #011a20;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
@@ -82,7 +82,7 @@ code {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.06);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
-  color: #f8fafc;
+  color: #b1d2f4;
   backdrop-filter: blur(18px);
 }
 
@@ -90,11 +90,14 @@ code {
   font-size: 1.25rem;
   margin-bottom: 0.35rem;
   font-weight: 700;
+  color: rgb(55, 7, 15);
+  font-size: 30px;
 }
 
 .pageSection,
 .newsPageWrap {
-  color: #f8fafc;
+  color: #77b3ef;
+  font-size: medium;
 }
 
 .searchPanel {
@@ -133,7 +136,7 @@ code {
 .newsCard {
   border-radius: 22px;
   overflow: hidden;
-  color: #f8fafc;
+  color: #8fc2f5;
 }
 
 .newsCard .card-img-top {
@@ -147,7 +150,7 @@ code {
 }
 
 .newsCardText {
-  color: rgba(248, 250, 252, 0.8);
+  color: rgba(1, 7, 13, 0.8);
 }
 
 .statusBlock {
@@ -170,17 +173,17 @@ code {
 .contactList {
   margin: 1rem 0 0;
   padding-left: 1.25rem;
-  color: rgba(248, 250, 252, 0.88);
+  color: rgba(9, 11, 14, 0.88);
 }
 
 .siteFooter {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(7, 17, 32, 0.96);
-  color: #f8fafc;
+  border-top: 1px solid rgba(6, 6, 13, 0.08);
+  background: rgba(11, 34, 68, 0.96);
+  color: #c6dbef;
 }
 
 .footerText {
-  color: rgba(248, 250, 252, 0.72);
+  color: rgba(1, 3, 6, 0.72);
 }
 
 .footerLink {
@@ -194,7 +197,7 @@ code {
 }
 
 .pageSection .glassCard {
-  color: #f8fafc;
+  color: #355472;
 }
 
 @media (max-width: 991px) {
@@ -202,4 +205,16 @@ code {
   .newsTitle {
     line-height: 1.08;
   }
+}
+
+.right{
+    color: #0f1b2f;
+}
+
+.left{
+  background-color: #355472;
+}
+
+.top{
+  background-color: #8fc2f5;
 }

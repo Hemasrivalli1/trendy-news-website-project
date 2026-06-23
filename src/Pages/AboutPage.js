@@ -1,51 +1,29 @@
-function AboutPage() {
-  return (
-    <div className="container py-5">
-      <div className="card shadow-lg border-0 p-5">
-        <h2 className="mb-4 text-primary">
-          About Trendy News
-        </h2>
+function AboutPage(){
+    return (
+    <div className="container pageSection py-5 left">
+        <div className="row justify-content-center">
+            <div className="col-lg-10">
+                <div className="glassCard p-4 p-md-5 rounded-4">
+                    <h2 className="sectionTitle">About this Project</h2>
+                    <p className="sectionText right">
+                        This is News Channel project here we 
+                        used react to built the web Application.it uses routing 
+                        to separate pages,Bootstrap for the layout.
+                    </p>
 
-        <p className="lead">
-          Trendy News is a modern news platform built
-          using React and NewsAPI. It provides real-time
-          updates on various topics including Politics,
-          Sports, Technology, Health, and Entertainment.
-        </p>
+                    <p className="sectionText mb-0 right">
+                        We learned how datamoves from card via props,use of
+                         useEffect loads the first news feed ,and how that event handlers
+                         poer search and category buttons.
 
-        <p>
-          Users can search for news articles, browse
-          different categories, and read complete
-          articles through external links. The project
-          demonstrates React concepts such as Components,
-          Props, State, useEffect, Event Handling, and
-          React Router.
-        </p>
+                         <h5>This project Develope by Teks Students 
+                            - @Vardhan,@Vishal,@Hemashri ,@Harisankeerthan </h5>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-        <h5 className="mt-4">
-          Technologies Used
-        </h5>
-
-        <ul>
-          <li>React JS</li>
-          <li>React Router DOM</li>
-          <li>Bootstrap 5</li>
-          <li>NewsAPI</li>
-          <li>JavaScript (ES6+)</li>
-        </ul>
-
-        <h5 className="mt-4">
-          Developed By
-        </h5>
-
-        <p>
-          Developed by Teks Academy students:
-          <br />
-          Vardhan, Vishal, Valli, and Harisankerthan.
-        </p>
-      </div>
     </div>
-  );
+    )
 }
-
 export default AboutPage;

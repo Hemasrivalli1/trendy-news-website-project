@@ -1,33 +1,22 @@
-function ContactPage() {
-  return (
-    <div className="container py-5">
-      <div className="card shadow-lg border-0 p-5">
-        <h2 className="text-primary mb-4">
-          Contact Trendy News
-        </h2>
-
-        <p className="lead">
-          We'd love to hear from you!
-        </p>
-
-        <p>
-          Have any suggestions, feedback, or questions about
-          Trendy News? Feel free to reach out to us.
-        </p>
-
-        <div className="mt-4">
-          <h5>📧 Email</h5>
-          <p>trendynews@gmail.com</p>
-
-          <h5>📞 Phone</h5>
-          <p>+91 9876543210</p>
-
-          <h5>🌐 Website</h5>
-          <p>www.trendynews.com</p>
+function ContactPage(){
+    return (
+    <div className="container pageSection py-5 left">
+        <div className="row justify-content-center">
+            <div className="col-lg-8">
+                <div className="glassCard p-4 p-md-5 rounded-4">
+                    <h2 className="sectionTitle">Contact</h2>
+           <p>
+            <h5 className="contactList">Conact us by below options
+            </h5>
+           </p>
+           <ul className="contactList">
+            <li>Email: Student@gmail.com</li>
+            <li>Project: React news Website</li>
+            <li>Mob:9110737490</li>
+           </ul>
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    </div>)
 }
-
 export default ContactPage;

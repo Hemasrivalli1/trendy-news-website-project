@@ -1,33 +1,43 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { NavLink,useNavigate } from "react-router-dom";
 
-function SiteNavbar() {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-      <div className="container">
-        <Link className="navbar-brand" to="/">
-          Trendy News
-        </Link>
+function SiteNavbar(){
+    const navigate = useNavigate();
+    return(
+        <nav className="navbar navbar-expand-lg navbar-dark siteNavbar sticky-top">
 
-        <div className="navbar-nav">
-          <Link className="nav-link" to="/">
-            Home
-          </Link>
+            <div className="container">
+                <NavLink to="/" className="navbar-brand fw-bold brandText">
+                Trendind News</NavLink>
 
-          <Link className="nav-link" to="/about">
-            About
-          </Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
-          <Link className="nav-link" to="/contact">
-            Contact
-          </Link>
+                <div className="collapse navbar-collapse" id="mainNavbar">
+                    <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                        <li className="nav-item">
+                            <NavLink to="/" className="nav-link">Home</NavLink>
+                        </li>
 
-          <Link className="nav-link" to="/news">
-            News
-          </Link>
-        </div>
-      </div>
-    </nav>
-  );
+                         <li className="nav-item">
+                            <NavLink to="/news" className="nav-link">News</NavLink>
+                        </li>
+
+                         <li className="nav-item">
+                            <NavLink to="/about" className="nav-link">About</NavLink>
+                        </li>
+
+                         <li className="nav-item">
+                            <NavLink to="/contact" className="nav-link">Contact</NavLink>
+                        </li>
+                        <li className="nav-item ms-lg-3">
+                         <button className="btn navCta" onClick={()=> navigate("/news")}>Explore News</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    )
 }
-
 export default SiteNavbar;

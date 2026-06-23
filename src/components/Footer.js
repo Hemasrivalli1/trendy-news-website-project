@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
- 
+
 function Footer(){
     return (
         <footer className="siteFooter">
             <div className="container py-4">
                 <div className="row align-items-center g-3">
- 
+
                     <div className="col-md-6">
                         <h5 className="mb-2">Trendy News</h5>
                         <p className="mb-0 footerText">
