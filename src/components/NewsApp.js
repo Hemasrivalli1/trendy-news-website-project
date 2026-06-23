@@ -13,9 +13,9 @@ const Newsapp = () => {
         try {
             setLoading(true)
             setError("")
-           const response = await fetch(
-  `https://gnews.io/api/v4/search?q=${query}&lang=en&country=in&max=10&apikey=${API_KEY}`
-);
+           
+            const response = await fetch(`https://gnews.io/api/v4/search?q=${query}&lang=en&country=in&max=10&apikey=${API_KEY}`);
+             
             const jsonData = await response.json();
 
             if (!response.ok) {
